@@ -1,1 +1,12 @@
-LOL
+
+---
+layout: default
+title: Kevin_557's Blog
+---
+<h2>{{ page.title }}</h2>
+<p>Glutton</p>
+<ul>
+{% for post in site.posts %}
+	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
